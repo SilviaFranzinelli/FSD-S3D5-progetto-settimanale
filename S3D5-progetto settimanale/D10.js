@@ -49,28 +49,48 @@ console.log(me.skills)
   Crea un pezzo di codice per aggiungere un nuovo elemento all'array "skills" contenuto nell'oggetto "me".
 */
 
-skills.unshift("php")
+me.skills.unshift("php")
 console.log(me.skills)
 
 /* ESERCIZIO G
   Crea un pezzo di codice per rimuovere programmaticamente l'ultimo elemento dall'array "skills" contenuto nell'oggetto "me".
 */
+me.skills.pop()
+console.log(me.skills)
 
 // Funzioni
 
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
+const numeri = function () {
+  return Math.floor(Math.random() * 7)
+}
+const dice = function (limit = 6) {
+  const randomNumbs = [];
+  for (let i = 0; i < limit; i++) {
+    const newNum = dice();
+    randomNumbs.push(newNum);
+  }
+}
+console.log(dice)
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
 */
+
+
 
 /* ESERCIZIO 3
   Crea una funzione chiamata "splitMe" che riceve una stringa come parametro e ritorna un'array contenente ogni parola della stringa.
 
   Es.: splitMe("I love coding") => ritorna ["I", "Love", "Coding"]
 */
+function splitMe() { 
+  console.log("Ciao a tutti")
+  return ["ciao", "a", "tutti"]}
+
+console.log(splitMe)
 
 /* ESERCIZIO 4
   Crea una funzione chiamata "deleteOne" che riceve una stringa e un booleano come parametri.
@@ -83,6 +103,7 @@ console.log(me.skills)
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
 
+
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
@@ -90,6 +111,12 @@ console.log(me.skills)
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+const weekDays = ["lunedì", "martedì","mercoledì", "giovedì", "venerdì"]
+function whatDayIsIt() {
+  const dayIndex = now.getDay();
+  const dayName = weekDays[monthIndex]
+}
+console.log(whatDayIsIt)
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
